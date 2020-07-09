@@ -1,0 +1,31 @@
+{
+  "name": "fpm",
+  "version": "0.0.1",
+  "description": "An easy Front-end Package Manager using modern javascript",
+  "main": "./bin/fpm.js",
+  "bin": "./bin/fpm.js",
+  "scripts": {
+    "start": "node ./bin/fpm.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ColinEspinas/fpm.git"
+  },
+  "keywords": [
+    "packages",
+    "packages-manager",
+    "front-end"
+  ],
+  "author": "Colin Espinas",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ColinEspinas/fpm/issues"
+  },
+  "homepage": "https://github.com/ColinEspinas/fpm#readme",
+  "dependencies": {
+    "chalk": "^4.1.0",
+    "commander": "^5.1.0",
+    "ora": "^4.0.4",
+    "simple-git": "^2.12.0"
+  }
+}
