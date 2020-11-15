@@ -29,7 +29,7 @@ const writeModuleFile = (name, provider, url, callback) => {
 
 program
 	.version(pkgjson.version)
-	.name("esmm");
+	.name("ezmm");
 
 program
 	.command('link <name>')

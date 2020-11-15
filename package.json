@@ -1,27 +1,29 @@
 {
-  "name": "esmm",
-  "version": "0.0.1",
+  "name": "ezmm",
+  "version": "0.1.0",
   "description": "An easy ES Module Manager using modern javascript",
-  "main": "./bin/esmm.js",
-  "bin": "./bin/esmm.js",
+  "main": "./bin/ezmm.js",
+  "bin": "./bin/ezmm.js",
   "scripts": {
-    "start": "node ./bin/esmm.js"
+    "start": "node ./bin/ezmm.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ColinEspinas/esmm.git"
+    "url": "git+https://github.com/ColinEspinas/ezmm.git"
   },
   "keywords": [
     "packages",
     "packages-manager",
-    "front-end"
+    "front-end",
+    "modules",
+    "modules-manager"
   ],
   "author": "Colin Espinas",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/ColinEspinas/esmm/issues"
+    "url": "https://github.com/ColinEspinas/ezmm/issues"
   },
-  "homepage": "https://github.com/ColinEspinas/esmm#readme",
+  "homepage": "https://github.com/ColinEspinas/ezmm#readme",
   "dependencies": {
     "boxen": "^4.2.0",
     "chalk": "^4.1.0",
