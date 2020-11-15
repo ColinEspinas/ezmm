@@ -31,8 +31,5 @@
     "chalk": "^4.1.0",
     "commander": "^6.2.0",
     "ora": "^5.1.0"
-  },
-  "publishConfig": {
-    "registry": "https://npm.pkg.github.com/"
   }
 }
