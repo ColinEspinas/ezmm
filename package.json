@@ -3,7 +3,9 @@
   "version": "0.1.0",
   "description": "An easy ES Module Manager using modern javascript",
   "main": "./bin/ezmm.js",
-  "bin": "./bin/ezmm.js",
+  "bin": {
+    "ezmm": "./bin/ezmm.js"
+  },
   "scripts": {
     "start": "node ./bin/ezmm.js"
   },
@@ -29,5 +31,6 @@
     "chalk": "^4.1.0",
     "commander": "^6.2.0",
     "ora": "^5.1.0"
-  }
+  },
+  "publishConfig": { "registry": "https://npm.pkg.github.com/" }
 }
