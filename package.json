@@ -1,15 +1,15 @@
 {
-  "name": "fpm",
+  "name": "esmm",
   "version": "0.0.1",
-  "description": "An easy Front-end Package Manager using modern javascript",
-  "main": "./bin/fpm.js",
-  "bin": "./bin/fpm.js",
+  "description": "An easy ES Module Manager using modern javascript",
+  "main": "./bin/esmm.js",
+  "bin": "./bin/esmm.js",
   "scripts": {
-    "start": "node ./bin/fpm.js"
+    "start": "node ./bin/esmm.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ColinEspinas/fpm.git"
+    "url": "git+https://github.com/ColinEspinas/esmm.git"
   },
   "keywords": [
     "packages",
@@ -19,13 +19,13 @@
   "author": "Colin Espinas",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/ColinEspinas/fpm/issues"
+    "url": "https://github.com/ColinEspinas/esmm/issues"
   },
-  "homepage": "https://github.com/ColinEspinas/fpm#readme",
+  "homepage": "https://github.com/ColinEspinas/esmm#readme",
   "dependencies": {
+    "boxen": "^4.2.0",
     "chalk": "^4.1.0",
-    "commander": "^5.1.0",
-    "ora": "^4.0.4",
-    "simple-git": "^2.12.0"
+    "commander": "^6.2.0",
+    "ora": "^5.1.0"
   }
 }
