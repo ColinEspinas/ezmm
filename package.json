@@ -1,6 +1,6 @@
 {
   "name": "ezmm",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "description": "An easy ES Module Manager using modern javascript",
   "main": "./bin/ezmm.js",
   "bin": {
