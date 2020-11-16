@@ -86,7 +86,7 @@ ezmm link react -u https://unpkg.com/react@16/umd/react.development.js
 The `unlink` command will delete a module `<name>` of your `modules` directory.
 
 ```sh
-ezmm unlink darken
+ezmm unlink react
 ```
 
 ### `help [command]`
