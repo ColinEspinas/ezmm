@@ -41,7 +41,7 @@ program
 	.description('Links a module in the "modules" directory.')
 	.option('-p, --provider <provider>', 'Defines the CDN provider.', providers.default)
 	.option('-u, --url <url>', 'If used, uses this value as the CDN url.')
-	.option('-t, --tag <tag>', 'If used, specifies a version/dist tag to the module (will be used only if the provider is compatible).', 'latest')
+	.option('-t, --tag <tag>', 'Specifies a version/dist tag to the module (only if the provider is compatible).', 'latest')
 	.action((name, options) => {
 		let spinner = ora({
 			text: 'Creating "modules" directory.',

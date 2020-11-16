@@ -1,6 +1,8 @@
 {
   "default": "skypack",
   "providers": {
-    "skypack": "https://cdn.skypack.dev/%n@%t"
+    "skypack": "https://cdn.skypack.dev/%n@%t",
+    "jspm": "https://jspm.dev/%n@%t",
+    "esm.sh": "https://esm.sh/%n@%t"
   }
 }
