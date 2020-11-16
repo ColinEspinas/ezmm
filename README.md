@@ -14,6 +14,7 @@ An easy ES Module Manager using modern javascript.
 - [Configuration](#configuration)
   - [Providers](#providers)
 - [License](#license)
+- [Contact](#contact)
 
 ## 🚀 Getting Started
 
@@ -88,7 +89,7 @@ The default file will look like this:
 }
 ```
 
-On any provider you add you will probably need to give the name of the module with `%n`.
+On any provider you add you will probably need to give the module's name with `%n`.
 
 Do not hesitate to do a pull request to add providers to ezmm default `provider.json`.
 
