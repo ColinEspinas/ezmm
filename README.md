@@ -41,6 +41,7 @@ yarn [global] add ezmm
 
 - **-p, --provider** : Defines the CDN provider. (default: "skypack")
 - **-u, --url** : If used, uses this value as the CDN url.
+- **-t, --tag** : If used, specifies a version/dist tag to the module (will be used only if the provider is compatible). (default: "latest")
 
 The `link` command will link a module `<name>` in your `modules` directory (will create a new directory if it does not exist).
 
@@ -84,12 +85,12 @@ The default file will look like this:
 {
   "default": "skypack",
   "providers": {
-    "skypack": "https://cdn.skypack.dev/%n"
+    "skypack": "https://cdn.skypack.dev/%n@%t"
   }
 }
 ```
 
-On any provider you add you will probably need to give the module's name with `%n`.
+On any provider you add you will probably need to give the module's name with `%n` and/or the module's version/dist tag with `%t`.
 
 Do not hesitate to do a pull request to add providers to ezmm default `provider.json`.
 

@@ -1,6 +1,6 @@
 {
   "default": "skypack",
   "providers": {
-    "skypack": "https://cdn.skypack.dev/%n"
+    "skypack": "https://cdn.skypack.dev/%n@%t"
   }
 }

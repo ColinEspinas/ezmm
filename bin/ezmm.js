@@ -1,6 +1,6 @@
 #! /usr/bin/env node
 
-const { program } = require('commander');
+const { program, version } = require('commander');
 const pkgjson = require('../package.json');
 const providers = require('../providers.json');
 const path = require('path');
@@ -9,11 +9,13 @@ const chalk = require('chalk');
 const boxen = require('boxen');
 const fs = require('fs');
 
-const writeModuleFile = (name, provider, url, callback) => {
+const writeModuleFile = (name, provider, url, tag, callback) => {
 
 	if (!url) {
 		if (providers.providers[provider]) {
-			url = providers.providers[provider].replace('%n', name);
+			url = providers.providers[provider]
+							.replace('%n', name)
+							.replace('%t', tag);
 		}
 		else {
 			callback(new Error('No provider corresponding to given provider name.'));
@@ -39,6 +41,7 @@ program
 	.description('Links a module in the "modules" directory.')
 	.option('-p, --provider <provider>', 'Defines the CDN provider.', providers.default)
 	.option('-u, --url <url>', 'If used, uses this value as the CDN url.')
+	.option('-t, --tag <tag>', 'If used, specifies a version/dist tag to the module (will be used only if the provider is compatible).', 'latest')
 	.action((name, options) => {
 		let spinner = ora({
 			text: 'Creating "modules" directory.',
@@ -62,7 +65,7 @@ program
 				spinner: 'simpleDotsScrolling'
 			}).start();
 
-			writeModuleFile(name, options.provider, options.url, err => {
+			writeModuleFile(name, options.provider, options.url, options.tag, err => {
 					if (!err) {
 						spinner.succeed(`The "${name}.js" module link file has been successfully written.`);
 						console.log();
