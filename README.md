@@ -29,7 +29,7 @@ The installation is pretty simple, just install the package.
 
 ```sh
 # NPM
-npm install [-g] ezmmm
+npm install [-g] ezmm
 
 # Yarn
 yarn [global] add ezmm
@@ -37,17 +37,18 @@ yarn [global] add ezmm
 
 ### 🏄 Usage
 
-EZMM is super simple to use, just use the `link` command to add a module to your `modules` directory.
+EZMM is super simple to use, just use the `link` command to add a module to your `modules` directory. If the `modules` directory does not exist it will be created.
 
 ```sh
 ezmm link react
 ```
 
-Then in your javascript modules you can import linked modules from the `modules` directory.
+Then in your javascript you can import linked modules from the `modules` directory.
 
 ```js
 import react from 'modules/react.js';
 ```
+*Note: Be sure to link your javascript in your html with `type="module"`.*
 
 You can overwrite the provider and/or the version you are using with the `link` command.
 
