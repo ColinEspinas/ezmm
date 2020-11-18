@@ -69,7 +69,7 @@ ezmm unlink react
 
 - **-p, --provider** : Defines the CDN provider. (default: "skypack")
 - **-u, --url** : If used, uses this value as the CDN url.
-- **-t, --tag** : Specifies a version/dist tag to the module (only if the provider is compatible). (default: "latest")
+- **-t, --tag** : Specifies a version/dist tag to the module (only if the provider is compatible).
 - **-nc, --no-check** : If used, do not check the status of the CDN provider.
 
 The `link` command will link a module `<name>` in your `modules` directory (will create a new directory if it does not exist).
