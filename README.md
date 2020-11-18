@@ -2,7 +2,7 @@
 [![NPM Badge](https://img.shields.io/npm/v/ezmm?style=for-the-badge)](https://www.npmjs.com/package/ezmm)
 [![Licence Badge](https://img.shields.io/github/license/ColinEspinas/ezmm?style=for-the-badge)](https://github.com/ColinEspinas/ezmm/blob/master/LICENSE)
 
-An easy ES Module Manager using modern javascript.
+An easy ES Module Manager to use modern javascript.
 
 ## Table of Content
 
