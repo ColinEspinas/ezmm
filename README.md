@@ -25,7 +25,7 @@ An easy ES Module Manager to use modern javascript.
 
 
 ### 📦 Installation
-The installation is pretty simple, just install the package.
+The installation is pretty simple, **just install the package**.
 
 ```sh
 # NPM
@@ -37,18 +37,18 @@ yarn [global] add ezmm
 
 ### 🏄 Usage
 
-EZMM is super simple to use, just use the `link` command to add a module to your `modules` directory. If the `modules` directory does not exist it will be created.
+EZMM is super simple to use, **just use the `link` command to add a module** to your `modules` directory and `modules.json` file. If the `modules` directory and the `modules.json` files do not exist they will be created.
 
 ```sh
 ezmm link react
 ```
 
-Then in your javascript you can import linked modules from the `modules` directory.
+Then in your javascript you can **import linked modules from the `modules` directory**.
 
 ```js
 import react from 'modules/react.js';
 ```
-*Note: Be sure to link your javascript in your html with `type="module"`.*
+*Note: Be sure to **link your javascript in your html with `type="module"`.***
 
 You can overwrite the provider and/or the version you are using with the `link` command.
 
@@ -61,6 +61,28 @@ Afterward, if you want to remove a module that you don't use anymore, use the `u
 
 ```sh
 ezmm unlink react
+```
+
+Once a module is linked you will see it in the `modules.json` file that is automatically created on the first `link` command (given you used the `name` argument). This file has a simple structure and is made to help with maintenance.
+
+```json
+{
+  "react": {
+    "provider": "skypack",
+    "tag": "16.10"
+  },
+  "styled-components": {
+    "url": "https://unpkg.com/styled-components/dist/styled-components.min.js"
+  }
+}
+```
+
+You can modify everything in this file and use the `link` command without arguments to update your links.
+
+```sh
+ezmm link
+# Given the example above, 
+# will link react 16.10 from skypack and styled-components from custom url
 ```
 
 ## ⌨️ Commands
