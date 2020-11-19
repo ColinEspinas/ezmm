@@ -72,7 +72,7 @@ Once a module is linked you will see it in the `modules.json` file that is autom
     "tag": "16.10"
   },
   "styled-components": {
-    "url": "https://unpkg.com/styled-components/dist/styled-components.min.js"
+    "url": "https://unpkg.com/styled-components/dist/styled-components.esm.js"
   }
 }
 ```
@@ -135,7 +135,7 @@ ezmm link -h
 
 ### 📫 Providers
 
-You can configure the providers of ezmm by editing the `provider.json` file in the package directory.
+You can configure the providers of EZMM by editing the `provider.json` file in the package directory.
 
 The default file will look like this:
 ```json
