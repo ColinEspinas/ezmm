@@ -89,7 +89,7 @@ ezmm link
 
 ### `link [name]`
 
-- **-p, --provider** : Defines the CDN provider. (default: "skypack")
+- **-p, --provider** : Defines the [CDN provider](#-providers). (default: "skypack")
 - **-u, --url** : If used, uses this value as the CDN url.
 - **-t, --tag** : Specifies a version/dist tag to the module (only if the provider is compatible).
 - **-nc, --no-check** : If used, do not check the status of the CDN provider.

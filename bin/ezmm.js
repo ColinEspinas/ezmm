@@ -12,7 +12,7 @@ const {
 	getModulesFromModulesJSON, 
 	linkModule, 
 	linkModules 
-} = require('../src/functions');
+} = require('../lib/functions');
 
 program
 	.version(pkgjson.version)
