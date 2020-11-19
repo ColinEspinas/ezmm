@@ -65,14 +65,14 @@ ezmm unlink react
 
 ## ⌨️ Commands
 
-### `link <name>`
+### `link [name]`
 
 - **-p, --provider** : Defines the CDN provider. (default: "skypack")
 - **-u, --url** : If used, uses this value as the CDN url.
 - **-t, --tag** : Specifies a version/dist tag to the module (only if the provider is compatible).
 - **-nc, --no-check** : If used, do not check the status of the CDN provider.
 
-The `link` command will link a module `<name>` in your `modules` directory (will create a new directory if it does not exist).
+The `link` command will link a module `<name>` in your `modules` directory and create an entry for the module in the `modules.json` file (will create new ones if they do not exist).
 
 ```sh
 # Using the default provider
@@ -80,6 +80,12 @@ ezmm link react
 
 # Using a custom CDN url
 ezmm link react -u https://unpkg.com/react@16/umd/react.development.js 
+```
+
+You can also use the `link` command without argument to link all the modules in you `modules.json` file.
+
+```sh
+ezmm link
 ```
 
 ### `unlink <name>`
