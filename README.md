@@ -71,8 +71,8 @@ Once a module is linked you will see it in the `modules.json` file that is autom
     "provider": "skypack",
     "tag": "16.10"
   },
-  "styled-components": {
-    "url": "https://unpkg.com/styled-components/dist/styled-components.esm.js"
+  "darken": {
+    "url": "https://unpkg.com/darken@latest/dist/darken.mjs"
   }
 }
 ```
@@ -82,7 +82,7 @@ You can modify everything in this file and use the `link` command without argume
 ```sh
 ezmm link
 # Given the example above, 
-# will link react 16.10 from skypack and styled-components from custom url
+# will link react 16.10 from skypack and darken from custom url
 ```
 
 ## ⌨️ Commands
