@@ -37,6 +37,10 @@ program
 		}
 	});
 
+/**
+ * The unlink command deletes a module from the modules.json
+ * file and delete the module file in the modules directory.
+ */
 program
 	.command('unlink <name>')
 	.alias("ul")
@@ -46,8 +50,10 @@ program
 			text: `Deleting "${name}.js" module link file.`,
 			spinner: 'simpleDotsScrolling'
 		}).start();
+		// Remove the module from module.json file.
 		removeModuleToModulesJSON(name, err => {
 			if (!err) {
+				// Remove the module file from modules directory.
 				fs.unlink(path.resolve(`modules/${name}.js`), err => {
 					if (!err) {
 						spinner.succeed(`The "${name}.js" module link file has been successfully deleted.`);

@@ -123,6 +123,10 @@ ezmm unlink react
 The `help` command will display the program help or the `[command]` help if specified.
 
 ```sh
+# Program help
+ezmm help
+
+# Link command help
 ezmm help link
 ```
 
