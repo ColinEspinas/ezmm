@@ -18,6 +18,10 @@ program
 	.version(pkgjson.version)
 	.name("ezmm");
 
+/**
+ * The link command adds a module to the modules.json
+ * file and create a module file in the modules directory.
+ */
 program
 	.command('link [name]')
 	.alias("l")
@@ -27,9 +31,11 @@ program
 	.option('-t, --tag <tag>', 'Specifies a version/dist tag to the module (only if the provider is compatible).')
 	.option('-nc, --no-check', 'If used, do not check the status of the CDN provider.')
 	.action((name, options) => {
+		// If the 'name' argument is given, link the module corresponding to the name.
 		if (name) {
 			linkModule(name, options);
 		}
+		// If no 'name' argument is given, link all the modules from the modules.json file
 		else {
 			getModulesFromModulesJSON((modules) => {
 					linkModules(modules);
