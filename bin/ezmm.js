@@ -30,6 +30,7 @@ program
 	.option('-u, --url <url>', 'If used, uses this value as the CDN url.')
 	.option('-t, --tag <tag>', 'Specifies a version/dist tag to the module (only if the provider is compatible).')
 	.option('-nc, --no-check', 'If used, do not check the status of the CDN provider.')
+	.option('-nd, --no-default', 'If used do not try to import the export named "default".')
 	.action((name, options) => {
 		// If the 'name' argument is given, link the module corresponding to the name.
 		if (name) {

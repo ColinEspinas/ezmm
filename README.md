@@ -93,6 +93,7 @@ ezmm link
 - **-u, --url** : If used, uses this value as the CDN url.
 - **-t, --tag** : Specifies a version/dist tag to the module (only if the provider is compatible).
 - **-nc, --no-check** : If used, do not check the status of the CDN provider.
+- **-nd, --no-default** : If used do not try to import the export named "default".
 
 The `link` command will link a module `<name>` in your `modules` directory and create an entry for the module in the `modules.json` file (will create new ones if they do not exist).
 
